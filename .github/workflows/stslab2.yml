@@ -34,3 +34,6 @@ jobs:
       # Runs a single command using the runners shell
       - name: Run aws cli
         run: aws sts get-caller-identity
+
+      - name: Run attach-role-policy
+        run: aws iam list-attached-role-policies --role-name sts-lab-2-target
