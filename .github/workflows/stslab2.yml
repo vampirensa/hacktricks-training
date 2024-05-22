@@ -27,7 +27,7 @@ jobs:
       # Checks-out your repository under $GITHUB_WORKSPACE, so your job can access it
       - uses: aws-actions/configure-aws-credentials@v4
         with:
-          aws-region: us-east-2
+          aws-region: us-east-1
           role-to-assume: arn:aws:iam::713113381398:role/sts-lab-2-target
           role-session-name: stslab2session1
 
