@@ -31,5 +31,5 @@ jobs:
           role-to-assume: arn:aws:iam::713113381398:role/sts-lab-2-target
           role-session-name: stslab2session1
 
-      - name: Run get-policy-version
-        run: aws iam get-policy-version --policy-arn arn:aws:iam::713113381398:policy/sts_lab_2_target --version-id v1
+      - name: Run get-secret-value
+        run: aws secretsmanager get-secret-value --secret-id arn:aws:secretsmanager:us-east-1:713113381398:secret:flag_sts_lab_2-hOiEY2
