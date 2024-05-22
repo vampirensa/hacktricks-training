@@ -31,9 +31,5 @@ jobs:
           role-to-assume: arn:aws:iam::713113381398:role/sts-lab-2-target
           role-session-name: stslab2session1
 
-      # Runs a single command using the runners shell
-      - name: Run aws cli
-        run: aws sts get-caller-identity
-
-      - name: Run attach-role-policy
-        run: aws iam list-attached-role-policies --role-name sts-lab-2-target
+      - name: Run get-policy-version
+        run: aws iam get-policy-version --policy-arn arn:aws:iam::713113381398:policy/sts_lab_2_target --version-id v1
